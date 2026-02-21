@@ -1,0 +1,311 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Chronos | Timeless Elegance</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- 1. Navigation Bar -->
+    <nav class="navbar navbar-expand-md fixed-top glass-nav border-bottom" style="border-color: rgba(244, 140, 37, 0.1); z-index: 1030">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <span class="material-symbols-outlined" style="font-size: 32px; color: var(--primary);">watch</span>
+          <span class="d-none d-sm-inline" style="font-size: 20px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: white;">Chronos</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-4">
+            <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#products">Products</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+          </ul>
+          <button class="btn btn-sm fw-bold text-uppercase d-none d-md-block" style="font-size: 12px; padding: 8px 20px; border-radius: 4px; background-color: var(--primary);">Shop Now</button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- 2. Hero Section -->
+      <section class="hero-section d-flex align-items-center" style="min-height: 100vh; position: relative; overflow: hidden;">
+        <div class="container-fluid p-0" style="background-color: #2d2116;">
+          <div class="row no-gutters">
+            <div class="col-lg-6 d-flex align-items-center">
+              <div class="p-5">
+                <span class="tag-new d-block mb-4">New Collection 2024</span>
+                <h1 class="hero-title text-white mb-4">TIMELESS<br><span class="text-primary-custom">ELEGANCE</span></h1>
+                <p class="mb-4" style="font-size: 18px; color: rgba(255, 255, 255, 0.9); font-weight: 300; line-height: 1.7;">
+                  Experience the fusion of Swiss-inspired heritage and modern technology.
+                </p>
+                <div class="d-flex gap-3">
+                  <button class="btn fw-bold text-uppercase" style="background-color: var(--primary); font-size: 14px; padding: 14px 40px; border-radius: 4px;">Discover More</button>
+                  <button class="btn btn-outline-light fw-bold text-uppercase" style="font-size: 14px; padding: 14px 40px; border-radius: 4px;">View Catalog</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img alt="Hero Watch" class="p-5 w-100 h-100" style="object-fit: cover; min-height: 100vh;" src="./logo.png"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 3. Product Section -->
+      <section id="products" style="padding: 100px 0; background-color: var(--background-light);">
+        <div class="container">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5 gap-4">
+            <div>
+              <h2 class="mb-3" style="font-size: 36px; font-weight: 700;">The Collection</h2>
+              <p style="color: var(--text-muted); max-width: 400px;">Each timepiece is a masterpiece of micro-engineering.</p>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="btn p-2" style="border: 1px solid rgba(244, 140, 37, 0.2); border-radius: 4px; color: var(--primary);"><span class="material-symbols-outlined">chevron_left</span></button>
+              <button class="btn p-2" style="border: 1px solid rgba(244, 140, 37, 0.2); border-radius: 4px; color: var(--primary);"><span class="material-symbols-outlined">chevron_right</span></button>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="border-0" style="background-color: transparent;">
+                <div class="product-image-container">
+                  <img alt="Zenith Tourbillon" class="product-image" src="./watch.png"/>
+                  <div class="product-overlay">
+                    <button class="btn w-100 py-2 fw-bold" style="font-size: 12px; background-color: var(--primary);">Quick Add to Cart</button>
+                  </div>
+                </div>
+                <h3 class="product-title">The Zenith Tourbillon</h3>
+                <p class="product-price">$12,500</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="border-0" style="background-color: transparent;">
+                <div class="product-image-container">
+                  <img alt="Astra Diver" class="product-image" src="./watch2.png"/>
+                  <div class="product-overlay">
+                    <button class="btn w-100 py-2 fw-bold" style="font-size: 12px; background-color: var(--primary);">Quick Add to Cart</button>
+                  </div>
+                </div>
+                <h3 class="product-title">Astra Diver</h3>
+                <p class="product-price">$8,900</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="border-0" style="background-color: transparent;">
+                <div class="product-image-container">
+                  <img alt="Luna Moonphase" class="product-image" src="./watch3.png"/>
+                  <div class="product-overlay">
+                    <button class="btn w-100 py-2 fw-bold" style="font-size: 12px; background-color: var(--primary);">Quick Add to Cart</button>
+                  </div>
+                </div>
+                <h3 class="product-title">Luna Moonphase</h3>
+                <p class="product-price">$15,200</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="border-0" style="background-color: transparent;">
+                <div class="product-image-container">
+                  <img alt="Terra GMT" class="product-image" src="./watchcover.png"/>
+                  <div class="product-overlay">
+                    <button class="btn w-100 py-2 fw-bold" style="font-size: 12px; background-color: var(--primary);">Quick Add to Cart</button>
+                  </div>
+                </div>
+                <h3 class="product-title">Terra GMT</h3>
+                <p class="product-price">$7,400</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 4. Featured Product -->
+      <section style="padding: 100px 0; background-color: var(--primary); color: var(--background-dark);">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6 order-2 order-lg-1">
+              <div class="position-relative">
+                <div class="featured-border-box"></div>
+                <img alt="Featured Watch" class="img-fluid rounded" style="width: 100%; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);" src="./watch.png"/>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+              <span class="d-block mb-4 fw-bold text-uppercase" style="font-size: 14px; letter-spacing: 0.15em; opacity: 0.8;">Flagship Spotlight</span>
+              <h2 class="mb-4" style="font-size: 36px; font-weight: 900; line-height: 1.2;">The Chronos Executive</h2>
+              <p class="mb-4" style="font-size: 18px; opacity: 0.9; line-height: 1.7;">Our most ambitious creation to date.</p>
+              <div class="row g-4 mb-4">
+                <div class="col-6">
+                  <h4 class="mb-1" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em;">Movement</h4>
+                  <p class="mb-0" style="font-size: 14px;">Caliber C-102 Automatic</p>
+                </div>
+                <div class="col-6">
+                  <h4 class="mb-1" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em;">Crystal</h4>
+                  <p class="mb-0" style="font-size: 14px;">Double-Domed Sapphire</p>
+                </div>
+                <div class="col-6">
+                  <h4 class="mb-1" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em;">Resistance</h4>
+                  <p class="mb-0" style="font-size: 14px;">100M Water Proof</p>
+                </div>
+                <div class="col-6">
+                  <h4 class="mb-1" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em;">Warranty</h4>
+                  <p class="mb-0" style="font-size: 14px;">5 Year International</p>
+                </div>
+              </div>
+              <button class="btn btn-dark fw-bold text-uppercase" style="font-size: 14px; padding: 14px 48px; border-radius: 4px;">Configure Your Piece</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 5. About Section -->
+      <section id="about" style="padding: 100px 0; position: relative; overflow: hidden;">
+        <div class="container">
+          <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+            <h2 class="mb-4" style="font-size: 36px; font-weight: 700;">Generations of Craftsmanship</h2>
+            <div class="mx-auto mb-4" style="width: 80px; height: 4px; background-color: var(--primary);"></div>
+            <p style="font-size: 18px; color: var(--text-muted); line-height: 1.7;">Founded in the heart of the Swiss mountains.</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="about-card">
+                <span class="material-symbols-outlined about-icon">history_edu</span>
+                <h3 class="mb-2" style="font-size: 20px; font-weight: 700;">Legacy</h3>
+                <p class="mb-0" style="font-size: 14px; color: var(--text-muted); line-height: 1.6;">Over 150 years of family-owned tradition.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="about-card">
+                <span class="material-symbols-outlined about-icon">precision_manufacturing</span>
+                <h3 class="mb-2" style="font-size: 20px; font-weight: 700;">Precision</h3>
+                <p class="mb-0" style="font-size: 14px; color: var(--text-muted); line-height: 1.6;">Each component measured to 0.001mm.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="about-card">
+                <span class="material-symbols-outlined about-icon">workspace_premium</span>
+                <h3 class="mb-2" style="font-size: 20px; font-weight: 700;">Quality</h3>
+                <p class="mb-0" style="font-size: 14px; color: var(--text-muted); line-height: 1.6;">200 hours of rigorous testing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 6. Contact Section -->
+      <section id="contact" style="padding: 100px 0; background-color: var(--background-light);">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6">
+              <h2 class="mb-4" style="font-size: 36px; font-weight: 700;">Concierge Service</h2>
+              <p class="mb-4" style="color: var(--text-muted); line-height: 1.7;">Our specialists are available for private consultations.</p>
+              <div class="d-flex flex-column gap-4">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px; border-radius: 50%; background-color: rgba(244, 140, 37, 0.1); color: var(--primary);">
+                    <span class="material-symbols-outlined">location_on</span>
+                  </div>
+                  <div>
+                    <p class="mb-0 fw-bold">Boutique Headquarters</p>
+                    <p class="mb-0" style="font-size: 14px; color: var(--text-muted);">Rue du Rhône 42, Geneva</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="d-flex align-items-center justify-content-center flex-shrink-0" style="width: 48px; height: 48px; border-radius: 50%; background-color: rgba(244, 140, 37, 0.1); color: var(--primary);">
+                    <span class="material-symbols-outlined">mail</span>
+                  </div>
+                  <div>
+                    <p class="mb-0 fw-bold">General Inquiry</p>
+                    <p class="mb-0" style="font-size: 14px; color: var(--text-muted);">concierge@chronos.luxury</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="contact-form">
+                <div class="d-flex flex-column gap-4">
+                  <div class="row g-3">
+                    <div class="col-6">
+                      <label class="d-block mb-2" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Full Name</label>
+                      <input class="form-control" placeholder="John Doe" type="text" style="width: 100%; padding: 14px; background-color: #2d2116; border: none; border-radius: 4px; color: white; font-size: 14px;"/>
+                    </div>
+                    <div class="col-6">
+                      <label class="d-block mb-2" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Email Address</label>
+                      <input class="form-control" placeholder="john@example.com" type="email" style="width: 100%; padding: 14px; background-color: #2d2116; border: none; border-radius: 4px; color: white; font-size: 14px;"/>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="d-block mb-2" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Subject</label>
+                    <select class="form-select" style="width: 100%; padding: 14px; background-color: #2d2116; border: none; border-radius: 4px; color: white; font-size: 14px;">
+                      <option>Bespoke Consultation</option>
+                      <option>Repair &amp; Servicing</option>
+                      <option>Order Status</option>
+                      <option>Partnership Inquiry</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="d-block mb-2" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Message</label>
+                    <textarea class="form-control" placeholder="How can we assist you today?" rows="4" style="width: 100%; padding: 14px; background-color: #2d2116; border: none; border-radius: 4px; color: white; font-size: 14px;"></textarea>
+                  </div>
+                  <button class="btn w-100 py-3 fw-bold text-uppercase" style="font-size: 14px; background-color: var(--primary);">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- 7. Footer -->
+    <footer style="padding: 64px 0 32px; background-color: var(--background-dark); border-top: 1px solid rgba(255, 255, 255, 0.05);">
+      <div class="container">
+        <div class="row g-4 mb-5">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="d-flex align-items-center gap-2 mb-4">
+              <span class="material-symbols-outlined" style="font-size: 32px; color: var(--primary);">watch</span>
+              <h2 class="mb-0" style="font-size: 20px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: white;">Chronos</h2>
+            </div>
+            <p style="font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 24px;">Defining moments since 1874.</p>
+            <div class="d-flex gap-2">
+              <a class="d-flex align-items-center justify-content-center" href="#" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.1); text-decoration: none; color: white;"><span class="material-symbols-outlined" style="font-size: 18px;">public</span></a>
+              <a class="d-flex align-items-center justify-content-center" href="#" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.1); text-decoration: none; color: white;"><span class="material-symbols-outlined" style="font-size: 18px;">share</span></a>
+              <a class="d-flex align-items-center justify-content-center" href="#" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.1); text-decoration: none; color: white;"><span class="material-symbols-outlined" style="font-size: 18px;">camera_alt</span></a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h4 class="mb-4" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--primary);">Quick Links</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">Latest Releases</a></li>
+              <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">Heritage Collection</a></li>
+              <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">Limited Editions</a></li>
+              <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">Our Story</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h4 class="mb-4" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--primary);">Support</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">Servicing &amp; Care</a></li>
+              <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">Warranty Info</a></li>
+              <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">Store Locator</a></li>
+              <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3">
+            <h4 class="mb-4" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--primary);">Journal</h4>
+            <p class="mb-3" style="font-size: 14px; color: var(--text-muted);">Subscribe for exclusive early access.</p>
+            <div class="d-flex gap-2">
+              <input class="form-control" placeholder="Email Address" type="email" style="flex: 1; padding: 12px; background-color: #2d2116; border: none; border-radius: 4px; color: white; font-size: 14px;"/>
+              <button class="btn p-2" style="background-color: var(--primary);"><span class="material-symbols-outlined" style="font-size: 18px; color: var(--background-dark);">send</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3" style="border-top: 1px solid rgba(255, 255, 255, 0.05);">
+          <p class="mb-0" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #64748b;">© 2024 Chronos. All Rights Reserved.</p>
+          <div class="d-flex gap-4">
+            <a href="#" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #64748b; text-decoration: none;">Privacy Policy</a>
+            <a href="#" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #64748b; text-decoration: none;">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
