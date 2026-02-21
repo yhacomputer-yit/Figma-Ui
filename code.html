@@ -10,10 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
     <style>
-        /* CSS Variables */
+        /* CSS Variables - Keep for theming */
         :root {
             --primary: #f48c25;
-            --primary-rgb: 244, 140, 37;
+            --primary-rgb: #f48c25;
             --background-light: #f8f7f5;
             --background-dark: #221910;
             --text-light: #f8fafc;
@@ -21,107 +21,20 @@
             --text-dark: #1e293b;
         }
 
-        /* Base Styles */
+        /* Base Styles - Essential custom styles */
         body {
             font-family: 'Manrope', sans-serif;
             background-color: var(--background-light);
             color: var(--text-dark);
         }
 
-        /* Navigation */
+        /* Glass Navigation */
         .glass-nav {
             background: rgba(34, 25, 16, 0.95);
             backdrop-filter: blur(12px);
         }
 
-        .nav-height {
-            height: 80px;
-        }
-
-        .nav-link-custom {
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.9);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .nav-link-custom:hover {
-            color: var(--primary) !important;
-        }
-
-        .nav-brand {
-            font-size: 20px;
-            font-weight: 800;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-        }
-
-        /* Buttons */
-        .btn-primary-custom {
-            background-color: var(--primary);
-            color: var(--background-dark);
-            font-weight: 700;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            padding: 10px 24px;
-            border: none;
-            border-radius: 4px;
-            transition: all 0.3s;
-        }
-
-        .btn-primary-custom:hover {
-            background-color: var(--primary);
-            transform: scale(1.05);
-        }
-
-        .btn-outline-custom {
-            background-color: transparent;
-            color: white;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            font-weight: 700;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            padding: 14px 40px;
-            border-radius: 4px;
-            transition: all 0.3s;
-        }
-
-        .btn-outline-custom:hover {
-            border-color: var(--primary);
-            color: white;
-        }
-
-        .btn-dark-custom {
-            background-color: var(--background-dark);
-            color: white;
-            font-weight: 700;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            padding: 14px 48px;
-            border: none;
-            border-radius: 4px;
-            transition: all 0.3s;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn-dark-custom:hover {
-            background-color: #334155;
-        }
-
         /* Hero Section */
-        .hero-section {
-            min-height: 100vh;
-            padding-top: 80px;
-            position: relative;
-            overflow: hidden;
-        }
-
         .hero-gradient {
             background: linear-gradient(to right, var(--background-dark), rgba(34, 25, 16, 0.8), transparent);
         }
@@ -139,19 +52,6 @@
             }
         }
 
-        .hero-subtitle {
-            font-size: 18px;
-            color: rgba(255, 255, 255, 0.9);
-            font-weight: 300;
-            line-height: 1.7;
-        }
-
-        @media (min-width: 768px) {
-            .hero-subtitle {
-                font-size: 20px;
-            }
-        }
-
         .tag-new {
             font-size: 14px;
             font-weight: 700;
@@ -160,27 +60,7 @@
             color: var(--primary);
         }
 
-        /* Product Section */
-        .section-products {
-            padding: 100px 0;
-            background-color: var(--background-light);
-        }
-
-        .section-title {
-            font-size: 36px;
-            font-weight: 700;
-        }
-
-        .section-desc {
-            color: var(--text-muted);
-            max-width: 400px;
-        }
-
-        .product-card {
-            border: none;
-            background-color: transparent;
-        }
-
+        /* Product Card */
         .product-image-container {
             position: relative;
             aspect-ratio: 3/4;
@@ -235,42 +115,6 @@
         }
 
         /* Featured Section */
-        .section-featured {
-            padding: 100px 0;
-            background-color: var(--primary);
-            color: var(--background-dark);
-        }
-
-        .featured-title {
-            font-size: 48px;
-            font-weight: 900;
-            line-height: 1.2;
-        }
-
-        @media (min-width: 768px) {
-            .featured-title {
-                font-size: 56px;
-            }
-        }
-
-        .featured-desc {
-            font-size: 18px;
-            opacity: 0.9;
-            line-height: 1.7;
-        }
-
-        .featured-spec-title {
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            margin-bottom: 8px;
-        }
-
-        .featured-spec-value {
-            font-size: 14px;
-        }
-
         .featured-border-box {
             position: absolute;
             top: -20px;
@@ -281,37 +125,7 @@
             border-left: 4px solid var(--background-dark);
         }
 
-        .featured-image {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        }
-
-        /* About Section */
-        .section-about {
-            padding: 100px 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .about-title {
-            font-size: 36px;
-            font-weight: 700;
-        }
-
-        .about-divider {
-            width: 80px;
-            height: 4px;
-            background-color: var(--primary);
-            margin: 0 auto 32px;
-        }
-
-        .about-desc {
-            font-size: 18px;
-            color: var(--text-muted);
-            line-height: 1.7;
-        }
-
+        /* About Cards */
         .about-card {
             text-align: center;
             padding: 32px;
@@ -331,55 +145,7 @@
             margin-bottom: 16px;
         }
 
-        .about-card-title {
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-
-        .about-card-desc {
-            font-size: 14px;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-
-        /* Contact Section */
-        .section-contact {
-            padding: 100px 0;
-            background-color: var(--background-light);
-        }
-
-        .contact-title {
-            font-size: 36px;
-            font-weight: 700;
-        }
-
-        .contact-desc {
-            color: var(--text-muted);
-            line-height: 1.7;
-            margin-bottom: 40px;
-        }
-
-        .contact-icon-box {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background-color: rgba(244, 140, 37, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary);
-        }
-
-        .contact-label {
-            font-weight: 700;
-        }
-
-        .contact-value {
-            font-size: 14px;
-            color: var(--text-muted);
-        }
-
+        /* Contact Form */
         .contact-form {
             padding: 32px;
             border-radius: 8px;
@@ -388,161 +154,13 @@
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
 
-        .form-label {
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--text-muted);
-            margin-bottom: 8px;
-            display: block;
-        }
-
-        .form-input {
-            width: 100%;
-            padding: 14px;
-            background-color: #2d2116;
-            border: none;
-            border-radius: 4px;
-            color: white;
-            font-size: 14px;
-        }
-
-        .form-input:focus {
-            outline: none;
-            box-shadow: 0 0 0 2px var(--primary);
-        }
-
-        .form-input::placeholder {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        /* Footer */
-        .footer {
-            padding: 64px 0 32px;
-            background-color: var(--background-dark);
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .footer-brand {
-            font-size: 20px;
-            font-weight: 800;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-        }
-
-        .footer-desc {
-            font-size: 14px;
-            color: var(--text-muted);
-            line-height: 1.7;
-            margin-bottom: 24px;
-        }
-
-        .footer-social {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-
-        .footer-social:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-        }
-
-        .footer-heading {
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            color: var(--primary);
-            margin-bottom: 24px;
-        }
-
-        .footer-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .footer-links li {
-            margin-bottom: 12px;
-        }
-
-        .footer-links a {
-            font-size: 14px;
-            color: var(--text-muted);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .footer-links a:hover {
-            color: var(--primary);
-        }
-
-        .footer-bottom {
-            padding-top: 32px;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .footer-copyright {
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: #64748b;
-        }
-
-        .footer-legal a {
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: #64748b;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .footer-legal a:hover {
-            color: white;
-        }
-
-        /* Utility Classes */
+        /* Utility Classes - Minimal custom utilities needed */
         .text-primary-custom {
             color: var(--primary) !important;
         }
 
-        .bg-primary-custom {
-            background-color: var(--primary) !important;
-        }
-
-        .bg-background-light {
-            background-color: var(--background-light);
-        }
-
-        .bg-background-dark {
-            background-color: var(--background-dark);
-        }
-
         .border-white-5 {
             border-color: rgba(255, 255, 255, 0.05) !important;
-        }
-
-        .hover-text-primary:hover {
-            color: var(--primary) !important;
-        }
-
-        .text-white-custom {
-            color: white;
-        }
-
-        /* Material Symbols */
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
     </style>
 </head>
@@ -550,20 +168,20 @@
     <!-- 1. Navigation Bar -->
     <nav class="fixed-top glass-nav border-bottom" style="border-color: rgba(244, 140, 37, 0.1); z-index: 1030;">
         <div class="container">
-            <div class="d-flex align-items-center justify-content-between nav-height">
+            <div class="d-flex align-items-center justify-content-between" style="height: 80px;">
                 <div class="d-flex align-items-center gap-3">
                     <div class="text-primary-custom">
                         <span class="material-symbols-outlined" style="font-size: 36px;">watch</span>
                     </div>
-                    <h2 class="nav-brand text-white mb-0">Chronos</h2>
+                    <h2 class="mb-0" style="font-size: 20px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: white;">Chronos</h2>
                 </div>
                 <div class="d-none d-md-flex align-items-center gap-5">
-                    <a class="nav-link-custom" href="#">Home</a>
-                    <a class="nav-link-custom" href="#products">Products</a>
-                    <a class="nav-link-custom" href="#about">About</a>
-                    <a class="nav-link-custom" href="#contact">Contact</a>
+                    <a class="nav-link" href="#" style="font-size: 14px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255, 255, 255, 0.9); text-decoration: none;">Home</a>
+                    <a class="nav-link" href="#products" style="font-size: 14px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255, 255, 255, 0.9); text-decoration: none;">Products</a>
+                    <a class="nav-link" href="#about" style="font-size: 14px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255, 255, 255, 0.9); text-decoration: none;">About</a>
+                    <a class="nav-link" href="#contact" style="font-size: 14px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255, 255, 255, 0.9); text-decoration: none;">Contact</a>
                 </div>
-                <button class="btn btn-primary-custom">
+                <button style="background-color: var(--primary);" class="btn fw-bold text-uppercase" style="font-size: 14px; padding: 10px 24px; border-radius: 4px;">
                     Shop Now
                 </button>
             </div>
@@ -571,40 +189,41 @@
     </nav>
     <main>
         <!-- 2. Hero Section -->
-        <section class="hero-section d-flex align-items-center">
-            <div class="position-absolute top-0 start-0 w-100 h-100">
-                <div class="position-absolute top-0 start-0 w-100 h-100 hero-gradient"></div>
-                <img alt="Hero Watch" class="w-100 h-100 object-fit-cover" data-alt="Luxury minimalist watch on a dark stone background" src="./logo.png"/>
-            </div>
-            <div class="position-relative container">
+        <section class="hero-section d-flex align-items-center" style="min-height: 100vh; padding-top: 80px; position: relative; overflow: hidden;">
+            <div class="container-fluid p-5" style="background-color: #2d2116;">
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-lg-6">
+                          <div class="col-lg-7">
                         <span class="tag-new d-block mb-4">New Collection 2024</span>
-                        <h1 class="hero-title text-white-custom mb-4">
+                        <h1 class="hero-title text-white mb-4">
                             TIMELESS<br><span class="text-primary-custom">ELEGANCE</span>
                         </h1>
-                        <p class="hero-subtitle mb-4">
+                        <p class="mb-4" style="font-size: 18px; color: rgba(255, 255, 255, 0.9); font-weight: 300; line-height: 1.7;">
                             Experience the fusion of Swiss-inspired heritage and modern technology. Our premium timepieces are engineered for those who value absolute precision and master craftsmanship.
                         </p>
-                        <div class="d-flex flex-wrap gap-3">
-                            <button class="btn btn-primary-custom">
+                        <div class="d-flex gap-3">
+                            <button style="background-color: var(--primary);" class="btn fw-bold text-uppercase" style="font-size: 14px; padding: 14px 40px; border-radius: 4px;">
                                 Discover More
                             </button>
-                            <button class="btn btn-outline-custom">
+                            <button class="btn btn-outline-light fw-bold text-uppercase" style="font-size: 14px; padding: 14px 40px; border-radius: 4px;">
                                 View Catalog
                             </button>
                         </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6">
+                                        <img alt="Hero Watch" class="w-100 h-100 object-fit-cover" data-alt="Luxury minimalist watch on a dark stone background" src="./logo.png"/>
                     </div>
                 </div>
             </div>
         </section>
         <!-- 3. Product Section -->
-        <section class="section-products" id="products">
+        <section class="products-section" id="products" style="padding: 100px 0; background-color: var(--background-light);">
             <div class="container">
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5 gap-4">
                     <div>
-                        <h2 class="section-title fw-bold mb-3">The Collection</h2>
-                        <p class="section-desc">Each timepiece is a masterpiece of micro-engineering, curated for the discerning collector.</p>
+                        <h2 class="mb-3" style="font-size: 36px; font-weight: 700;">The Collection</h2>
+                        <p style="color: var(--text-muted); max-width: 400px;">Each timepiece is a masterpiece of micro-engineering, curated for the discerning collector.</p>
                     </div>
                     <div class="d-flex gap-2">
                         <button class="btn p-2" style="border: 1px solid rgba(244, 140, 37, 0.2); border-radius: 4px; color: var(--primary);">
@@ -618,11 +237,11 @@
                 <div class="row g-4">
                     <!-- Product Card 1 -->
                     <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card product-card">
+                        <div class="border-0" style="background-color: transparent;">
                             <div class="product-image-container">
                                 <img alt="Zenith Tourbillon" class="product-image" data-alt="Modern automatic watch with black leather strap" src="./watch.png"/>
                                 <div class="product-overlay">
-                                    <button class="btn w-100 btn-primary-custom py-2" style="font-size: 12px;">Quick Add to Cart</button>
+                                    <button class="btn btn-warning w-100 py-2 fw-bold" style="font-size: 12px;">Quick Add to Cart</button>
                                 </div>
                             </div>
                             <h3 class="product-title">The Zenith Tourbillon</h3>
@@ -631,11 +250,11 @@
                     </div>
                     <!-- Product Card 2 -->
                     <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card product-card">
+                        <div class="border-0" style="background-color: transparent;">
                             <div class="product-image-container">
                                 <img alt="Astra Diver" class="product-image" data-alt="Luxury silver dive watch with rotating bezel" src="./watch2.png"/>
                                 <div class="product-overlay">
-                                    <button class="btn w-100 btn-primary-custom py-2" style="font-size: 12px;">Quick Add to Cart</button>
+                                    <button class="btn btn-warning w-100 py-2 fw-bold" style="font-size: 12px;">Quick Add to Cart</button>
                                 </div>
                             </div>
                             <h3 class="product-title">Astra Diver</h3>
@@ -644,11 +263,11 @@
                     </div>
                     <!-- Product Card 3 -->
                     <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card product-card">
+                        <div class="border-0" style="background-color: transparent;">
                             <div class="product-image-container">
                                 <img alt="Luna Moonphase" class="product-image" data-alt="Elegant moonphase watch with intricate dial" src="./watch3.png"/>
                                 <div class="product-overlay">
-                                    <button class="btn w-100 btn-primary-custom py-2" style="font-size: 12px;">Quick Add to Cart</button>
+                                    <button class="btn btn-warning w-100 py-2 fw-bold" style="font-size: 12px;">Quick Add to Cart</button>
                                 </div>
                             </div>
                             <h3 class="product-title">Luna Moonphase</h3>
@@ -657,11 +276,11 @@
                     </div>
                     <!-- Product Card 4 -->
                     <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card product-card">
+                        <div class="border-0" style="background-color: transparent;">
                             <div class="product-image-container">
                                 <img alt="Terra GMT" class="product-image" data-alt="Rugged GMT watch for world travelers" src="./watchcover.png"/>
                                 <div class="product-overlay">
-                                    <button class="btn w-100 btn-primary-custom py-2" style="font-size: 12px;">Quick Add to Cart</button>
+                                    <button class="btn btn-warning w-100 py-2 fw-bold" style="font-size: 12px;">Quick Add to Cart</button>
                                 </div>
                             </div>
                             <h3 class="product-title">Terra GMT</h3>
@@ -672,40 +291,40 @@
             </div>
         </section>
         <!-- 4. Featured Product -->
-        <section class="section-featured">
+        <section class="featured-section" style="padding: 100px 0; background-color: var(--primary); color: var(--background-dark);">
             <div class="container">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6">
                         <div class="position-relative">
                             <div class="featured-border-box"></div>
-                            <img alt="Featured Watch" class="featured-image" data-alt="Detailed close up of a luxury watch movement" src="./watch.png"/>
+                            <img alt="Featured Watch" class="img-fluid rounded" style="width: 100%; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);" data-alt="Detailed close up of a luxury watch movement" src="./watch.png"/>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <span class="d-block mb-4 fw-bold text-uppercase" style="font-size: 14px; letter-spacing: 0.15em; opacity: 0.8;">Flagship Spotlight</span>
-                        <h2 class="featured-title mb-4">The Chronos Executive</h2>
-                        <p class="featured-desc mb-4">
+                        <h2 class="mb-4" style="font-size: 48px; font-weight: 900; line-height: 1.2;">The Chronos Executive</h2>
+                        <p class="mb-4" style="font-size: 18px; opacity: 0.9; line-height: 1.7;">
                             Our most ambitious creation to date. Featuring a proprietary self-winding movement with a 72-hour power reserve and a hand-polished grade 5 titanium case.
                         </p>
                         <div class="row g-4 mb-4">
                             <div class="col-6">
-                                <h4 class="featured-spec-title">Movement</h4>
-                                <p class="featured-spec-value mb-0">Caliber C-102 Automatic</p>
+                                <h4 class="mb-1" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em;">Movement</h4>
+                                <p class="mb-0" style="font-size: 14px;">Caliber C-102 Automatic</p>
                             </div>
                             <div class="col-6">
-                                <h4 class="featured-spec-title">Crystal</h4>
-                                <p class="featured-spec-value mb-0">Double-Domed Sapphire</p>
+                                <h4 class="mb-1" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em;">Crystal</h4>
+                                <p class="mb-0" style="font-size: 14px;">Double-Domed Sapphire</p>
                             </div>
                             <div class="col-6">
-                                <h4 class="featured-spec-title">Resistance</h4>
-                                <p class="featured-spec-value mb-0">100M Water Proof</p>
+                                <h4 class="mb-1" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em;">Resistance</h4>
+                                <p class="mb-0" style="font-size: 14px;">100M Water Proof</p>
                             </div>
                             <div class="col-6">
-                                <h4 class="featured-spec-title">Warranty</h4>
-                                <p class="featured-spec-value mb-0">5 Year International</p>
+                                <h4 class="mb-1" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em;">Warranty</h4>
+                                <p class="mb-0" style="font-size: 14px;">5 Year International</p>
                             </div>
                         </div>
-                        <button class="btn btn-dark-custom">
+                        <button class="btn btn-dark fw-bold text-uppercase" style="font-size: 14px; padding: 14px 48px; border-radius: 4px;">
                             Configure Your Piece
                         </button>
                     </div>
@@ -713,12 +332,12 @@
             </div>
         </section>
         <!-- 5. About Section -->
-        <section class="section-about" id="about">
+        <section class="about-section" id="about" style="padding: 100px 0; position: relative; overflow: hidden;">
             <div class="container">
                 <div class="text-center mx-auto mb-5" style="max-width: 700px;">
-                    <h2 class="about-title fw-bold mb-4">Generations of Craftsmanship</h2>
-                    <div class="about-divider"></div>
-                    <p class="about-desc">
+                    <h2 class="mb-4" style="font-size: 36px; font-weight: 700;">Generations of Craftsmanship</h2>
+                    <div class="mx-auto mb-4" style="width: 80px; height: 4px; background-color: var(--primary);"></div>
+                    <p style="font-size: 18px; color: var(--text-muted); line-height: 1.7;">
                         Founded in the heart of the Swiss mountains and reborn for the modern era, Chronos represents more than just a tool for telling time. It is a testament to human ingenuity and the pursuit of perfection.
                     </p>
                 </div>
@@ -726,53 +345,53 @@
                     <div class="col-md-4">
                         <div class="about-card">
                             <span class="material-symbols-outlined about-icon">history_edu</span>
-                            <h3 class="about-card-title">Legacy</h3>
-                            <p class="about-card-desc mb-0">Over 150 years of family-owned tradition in horological excellence.</p>
+                            <h3 class="mb-2" style="font-size: 20px; font-weight: 700;">Legacy</h3>
+                            <p class="mb-0" style="font-size: 14px; color: var(--text-muted); line-height: 1.6;">Over 150 years of family-owned tradition in horological excellence.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="about-card">
                             <span class="material-symbols-outlined about-icon">precision_manufacturing</span>
-                            <h3 class="about-card-title">Precision</h3>
-                            <p class="about-card-desc mb-0">Each component is measured to tolerances within 0.001 millimeters.</p>
+                            <h3 class="mb-2" style="font-size: 20px; font-weight: 700;">Precision</h3>
+                            <p class="mb-0" style="font-size: 14px; color: var(--text-muted); line-height: 1.6;">Each component is measured to tolerances within 0.001 millimeters.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="about-card">
                             <span class="material-symbols-outlined about-icon">workspace_premium</span>
-                            <h3 class="about-card-title">Quality</h3>
-                            <p class="about-card-desc mb-0">Every timepiece undergoes 200 hours of rigorous quality testing.</p>
+                            <h3 class="mb-2" style="font-size: 20px; font-weight: 700;">Quality</h3>
+                            <p class="mb-0" style="font-size: 14px; color: var(--text-muted); line-height: 1.6;">Every timepiece undergoes 200 hours of rigorous quality testing.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- 6. Contact Section -->
-        <section class="section-contact" id="contact">
+        <section class="contact-section" id="contact" style="padding: 100px 0; background-color: var(--background-light);">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-6">
-                        <h2 class="contact-title fw-bold mb-4">Concierge Service</h2>
-                        <p class="contact-desc">
+                        <h2 class="mb-4" style="font-size: 36px; font-weight: 700;">Concierge Service</h2>
+                        <p class="mb-4" style="color: var(--text-muted); line-height: 1.7;">
                             Interested in a bespoke configuration or have a specific inquiry? Our specialists are available for private consultations at our boutiques worldwide or via video call.
                         </p>
                         <div class="d-flex flex-column gap-4">
                             <div class="d-flex align-items-center gap-3">
-                                <div class="contact-icon-box">
+                                <div class="d-flex align-items-center justify-content-center" style="width: 48px; height: 48px; border-radius: 50%; background-color: rgba(244, 140, 37, 0.1); color: var(--primary);">
                                     <span class="material-symbols-outlined">location_on</span>
                                 </div>
                                 <div>
-                                    <p class="contact-label mb-0">Boutique Headquarters</p>
-                                    <p class="contact-value mb-0" data-location="Geneva, Switzerland">Rue du Rhône 42, Geneva</p>
+                                    <p class="mb-0 fw-bold">Boutique Headquarters</p>
+                                    <p class="mb-0" style="font-size: 14px; color: var(--text-muted);" data-location="Geneva, Switzerland">Rue du Rhône 42, Geneva</p>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center gap-3">
-                                <div class="contact-icon-box">
+                                <div class="d-flex align-items-center justify-content-center" style="width: 48px; height: 48px; border-radius: 50%; background-color: rgba(244, 140, 37, 0.1); color: var(--primary);">
                                     <span class="material-symbols-outlined">mail</span>
                                 </div>
                                 <div>
-                                    <p class="contact-label mb-0">General Inquiry</p>
-                                    <p class="contact-value mb-0">concierge@chronos.luxury</p>
+                                    <p class="mb-0 fw-bold">General Inquiry</p>
+                                    <p class="mb-0" style="font-size: 14px; color: var(--text-muted);">concierge@chronos.luxury</p>
                                 </div>
                             </div>
                         </div>
@@ -782,17 +401,17 @@
                             <div class="d-flex flex-column gap-4">
                                 <div class="row g-3">
                                     <div class="col-6">
-                                        <label class="form-label">Full Name</label>
-                                        <input class="form-input" placeholder="John Doe" type="text"/>
+                                        <label class="d-block mb-2" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Full Name</label>
+                                        <input class="form-control" placeholder="John Doe" type="text" style="width: 100%; padding: 14px; background-color: #2d2116; border: none; border-radius: 4px; color: white; font-size: 14px;"/>
                                     </div>
                                     <div class="col-6">
-                                        <label class="form-label">Email Address</label>
-                                        <input class="form-input" placeholder="john@example.com" type="email"/>
+                                        <label class="d-block mb-2" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Email Address</label>
+                                        <input class="form-control" placeholder="john@example.com" type="email" style="width: 100%; padding: 14px; background-color: #2d2116; border: none; border-radius: 4px; color: white; font-size: 14px;"/>
                                     </div>
                                 </div>
                                 <div>
-                                    <label class="form-label">Subject</label>
-                                    <select class="form-input">
+                                    <label class="d-block mb-2" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Subject</label>
+                                    <select class="form-select" style="width: 100%; padding: 14px; background-color: #2d2116; border: none; border-radius: 4px; color: white; font-size: 14px;">
                                         <option>Bespoke Consultation</option>
                                         <option>Repair &amp; Servicing</option>
                                         <option>Order Status</option>
@@ -800,10 +419,10 @@
                                     </select>
                                 </div>
                                 <div>
-                                    <label class="form-label">Message</label>
-                                    <textarea class="form-input" placeholder="How can we assist you today?" rows="4"></textarea>
+                                    <label class="d-block mb-2" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Message</label>
+                                    <textarea class="form-control" placeholder="How can we assist you today?" rows="4" style="width: 100%; padding: 14px; background-color: #2d2116; border: none; border-radius: 4px; color: white; font-size: 14px;"></textarea>
                                 </div>
-                                <button class="btn btn-primary-custom w-100 py-3">
+                                <button style="background-color: var(--primary);" class="btn w-100 py-3 fw-bold text-uppercase" style="font-size: 14px;">
                                     Send Message
                                 </button>
                             </div>
@@ -814,63 +433,63 @@
         </section>
     </main>
     <!-- 7. Footer -->
-    <footer class="footer">
+    <footer class="footer" style="padding: 64px 0 32px; background-color: var(--background-dark); border-top: 1px solid rgba(255, 255, 255, 0.05);">
         <div class="container">
             <div class="row g-4 mb-5">
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="d-flex align-items-center gap-2 mb-4">
                         <span class="material-symbols-outlined text-primary-custom" style="font-size: 32px;">watch</span>
-                        <h2 class="footer-brand text-light mb-0">Chronos</h2>
+                        <h2 class="mb-0" style="font-size: 20px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: white;">Chronos</h2>
                     </div>
-                    <p class="footer-desc">
+                    <p style="font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 24px;">
                         Defining moments through precision engineering and timeless design since 1874.
                     </p>
                     <div class="d-flex gap-2">
-                        <a class="footer-social" href="#">
+                        <a class="d-flex align-items-center justify-content-center footer-social" href="#" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.1); text-decoration: none; color: white; transition: all 0.3s;">
                             <span class="material-symbols-outlined" style="font-size: 18px;">public</span>
                         </a>
-                        <a class="footer-social" href="#">
+                        <a class="d-flex align-items-center justify-content-center footer-social" href="#" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.1); text-decoration: none; color: white; transition: all 0.3s;">
                             <span class="material-symbols-outlined" style="font-size: 18px;">share</span>
                         </a>
-                        <a class="footer-social" href="#">
+                        <a class="d-flex align-items-center justify-content-center footer-social" href="#" style="width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.1); text-decoration: none; color: white; transition: all 0.3s;">
                             <span class="material-symbols-outlined" style="font-size: 18px;">camera_alt</span>
                         </a>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
-                    <h4 class="footer-heading">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Latest Releases</a></li>
-                        <li><a href="#">Heritage Collection</a></li>
-                        <li><a href="#">Limited Editions</a></li>
-                        <li><a href="#">Our Story</a></li>
+                    <h4 class="mb-4" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--primary);">Quick Links</h4>
+                    <ul class="list-unstyled mb-0" style="padding: 0; margin: 0;">
+                        <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">Latest Releases</a></li>
+                        <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">Heritage Collection</a></li>
+                        <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">Limited Editions</a></li>
+                        <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">Our Story</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-lg-3">
-                    <h4 class="footer-heading">Support</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Servicing &amp; Care</a></li>
-                        <li><a href="#">Warranty Info</a></li>
-                        <li><a href="#">Store Locator</a></li>
-                        <li><a href="#">FAQ</a></li>
+                    <h4 class="mb-4" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--primary);">Support</h4>
+                    <ul class="list-unstyled mb-0" style="padding: 0; margin: 0;">
+                        <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">Servicing &amp; Care</a></li>
+                        <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">Warranty Info</a></li>
+                        <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">Store Locator</a></li>
+                        <li class="mb-3"><a href="#" style="font-size: 14px; color: var(--text-muted); text-decoration: none;">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-lg-3">
-                    <h4 class="footer-heading">Journal</h4>
-                    <p class="footer-desc small mb-3">Subscribe for exclusive early access to limited editions.</p>
+                    <h4 class="mb-4" style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--primary);">Journal</h4>
+                    <p class="mb-3" style="font-size: 14px; color: var(--text-muted);">Subscribe for exclusive early access to limited editions.</p>
                     <div class="d-flex gap-2">
-                        <input class="form-input" placeholder="Email Address" type="email" style="flex: 1; padding: 12px;"/>
-                        <button class="btn btn-primary-custom p-2">
-                            <span class="material-symbols-outlined text-dark" style="font-size: 18px;">send</span>
+                        <input class="form-control" placeholder="Email Address" type="email" style="flex: 1; padding: 12px; background-color: #2d2116; border: none; border-radius: 4px; color: white; font-size: 14px;"/>
+                        <button style="background-color: var(--primary);" class="btn p-2">
+                            <span class="material-symbols-outlined" style="font-size: 18px; color: var(--background-dark);">send</span>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-                <p class="footer-copyright mb-0">© 2024 Chronos Horological Group. All Rights Reserved.</p>
-                <div class="footer-legal d-flex gap-4">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+            <div class="pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3" style="border-top: 1px solid rgba(255, 255, 255, 0.05);">
+                <p class="mb-0" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #64748b;">© 2024 Chronos Horological Group. All Rights Reserved.</p>
+                <div class="d-flex gap-4">
+                    <a href="#" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #64748b; text-decoration: none;">Privacy Policy</a>
+                    <a href="#" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #64748b; text-decoration: none;">Terms of Service</a>
                 </div>
             </div>
         </div>
