@@ -33,15 +33,11 @@
         line-height: 1.1;
         letter-spacing: -0.03em;
       }
-      @media (min-width: 768px) {
-        .hero-title {
-          font-size: 72px;
-        }
-      }
-      @media (min-width: 992px) {
-        .hero-title {
-          font-size: 96px;
-        }
+      .hero-sutitle {
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
       }
       .tag-new {
         font-size: 14px;
@@ -129,4 +125,14 @@
       }
       .text-primary-custom {
         color: var(--primary) !important;
+      }
+            @media (min-width: 768px) {
+        .hero-title {
+          font-size: 72px;
+        }
+      }
+      @media (min-width: 992px) {
+        .hero-title {
+          font-size: 96px;
+        }
       }
