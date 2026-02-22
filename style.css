@@ -5,6 +5,9 @@
         --text-muted: #94a3b8;
         --text-dark: #1e293b;
       }
+      .text-muted{
+        color: var(--text-muted) !important;
+      }
       body {
         font-family: "Manrope", sans-serif;
         background-color: var(--background-light);
@@ -146,6 +149,28 @@
         border-radius: 4px;
         color: var(--primary);
       }
+      .form-dark {
+        width: 100%;
+        padding: 14px;
+        background-color: #2d2116;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        font-size: 14px;
+      }
+      .label-form {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--text-muted);
+      }
+      .bg-transparent {
+        background-color: transparent;
+      }
+
       @media (max-width: 992px) {
         .hero-title {
           font-size: 60px;
