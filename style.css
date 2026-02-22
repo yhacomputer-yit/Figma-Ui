@@ -27,13 +27,7 @@
       .navbar-dark .nav-link:hover {
         color: var(--primary) !important;
       }
-      .hero-title {
-        font-size: 48px;
-        font-weight: 900;
-        line-height: 1.1;
-        letter-spacing: -0.03em;
-      }
-      .hero-sutitle {
+      .hero-title, .hero-subtitle {
         font-size: 60px;
         font-weight: 900;
         line-height: 1.1;
